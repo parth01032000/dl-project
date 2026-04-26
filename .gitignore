@@ -6,3 +6,7 @@ datasets/
 datasets/cache/
 __pycache__/
 *.pyc
+datasets/
+datasets/cache/
+__pycache__/
+*.pyc
