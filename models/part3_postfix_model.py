@@ -200,7 +200,7 @@ class PostfixTransformer(nn.Module):
 
         for _ in range(self.max_len):
             T    = tokens.size(1)
-            x    = self.emb(tokens) * math.sqrt(self.d_model)
+            x    = self.emb(tokens.long()) * math.sqrt(self.d_model)
             x    = self.dec_pe(x)
             caus = self._causal(T, device)
             for layer in self.dec:
